@@ -1,0 +1,106 @@
+body{
+    background-color: #011936;
+}
+
+.b{
+    /*background: linear-gradient(235deg,yellow , red);*/
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    padding-bottom: 1px;
+    
+}
+.c{
+    background-image: url("gg.jpg");
+    background-size: cover;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    left: 13px;
+    top: 20px;
+    opacity: 0.3;
+}
+.d{
+    position: relative;
+    height: auto;
+    width: 250px;
+    background-color: transparent;
+    top: -200px;
+    left: 13px;
+    opacity: 0;
+    text-align: center;
+}
+.b:hover{
+    transition: 0.5s all ease;
+    height: auto;
+    background-size: cover;
+
+}
+.b:hover .c{
+    top: -20px;
+    transition: 0.5s all ease;
+    opacity: 1;
+}
+.b:hover .d{
+    top: 0px;
+    opacity: 0.8;
+    background-color: transparent;
+    color: white;
+    transition: 0.5s all ease;
+    
+}
+.b::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    z-index: -1;
+    background: linear-gradient(235deg,yellow,black,blue);
+}
+    
+
+.b::after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    z-index: -2;
+    filter: blur(40px);
+    background: linear-gradient(235deg,yellow,black,blue);
+}
+    
+.b:hover::after{
+    filter: blur(60px);
+}
+
+/*.b:hover .c::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -2px;
+    left: -5px;
+    right: -2px;
+    z-index: -1;
+    background: linear-gradient(235deg, green,black,yellow);
+   
+}
+.b:hover .c::after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    z-index: -2;
+    filter: blur(40px);
+    background: linear-gradient(235deg,yellow,black,blue);
+}
+*/
